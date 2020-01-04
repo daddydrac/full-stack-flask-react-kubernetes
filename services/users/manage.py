@@ -39,7 +39,7 @@ def seed_db():
     db.session.commit()
 
 
-@cli.command()
+@cli.command("test")
 def test():
     """Runs the tests without code coverage"""
     tests = unittest.TestLoader().discover('project/tests', pattern='test*.py')
@@ -49,7 +49,7 @@ def test():
     sys.exit(result)
 
 
-@cli.command()
+@cli.command("cov")
 def cov():
     """Runs the unit tests with coverage."""
     tests = unittest.TestLoader().discover('project/tests')
