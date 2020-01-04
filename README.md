@@ -1,4 +1,5 @@
 ## Full Stack Flask and React on Kubernetes
+Deploy a Flask-based microservice (along with Postgres and React) to a Kubernetes cluster
 
 ### How to use
 Build and run: ```docker-compose  up -d --build```
