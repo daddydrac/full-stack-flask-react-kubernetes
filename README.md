@@ -13,7 +13,7 @@ Convention: ```docker-compose exec <service_name> python manage.py <custom_flask
 - Tear it down: ```docker-compose down``` Note: you can append ```-v``` to end of the cmd to unmount volumes
 
 
-### Kunernetes Instructions
+### Kubernetes Instructions
 WIP: TODO
 
 
