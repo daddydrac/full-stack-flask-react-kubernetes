@@ -11,6 +11,8 @@ Convention: ```docker-compose exec <service_name> python manage.py <custom_flask
 
 - Init database schema with auth/user table: ```docker-compose exec users python manage.py recreate_db```
 - Seed user table: ```docker-compose exec users python manage.py seed_db```; Seeds with user: ```admin```, e-mail: ```admin@gmail.com```
+- Run unit tests: ```docker-compose exec users python manage.py test```
+- Code coverage: ```docker-compose exec users python manage.py cov```
 - Tear it down: ```docker-compose down``` Note: you can append ```-v``` to end of the cmd to unmount volumes
 
 
